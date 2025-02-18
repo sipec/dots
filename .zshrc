@@ -4,7 +4,6 @@ local HOMEBREW_PREFIX=/opt/homebrew
 export FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH"
 
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-# source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
 
 # show path and git branch
 autoload -Uz vcs_info
@@ -14,21 +13,6 @@ setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 PROMPT='%D{%m-%d %H:%M} %2~ > '
 zstyle ':vcs_info:git:*' formats '%F{blue}%b%f %r'
-
-#  zsh-autocomplete
-# # make Enter submit the command line straight from the menu
-# bindkey -M menuselect '\r' .accept-line
-# # make ← and → always move the cursor on the command line
-# # bindkey -M menuselect  '^[[D' .backward-char  '^[OD' .backward-char
-# # bindkey -M menuselect  '^[[C'  .forward-char  '^[OC'  .forward-char
-# zstyle ':autocomplete:recent-paths:*' list-lines 10
-# zstyle ':autocomplete:history-incremental-search-backward:*' list-lines 10
-# zstyle ':autocomplete:history-search-backward:*' list-lines 8
-# zstyle ':autocomplete:*' min-input 1
-# zstyle ':autocomplete:*' insert-unambiguous yes
-# zstyle ':autocomplete:*' widget-style menu-select
-# zstyle ':completion:*' menu select
-# zstyle ':completion:*' complete-options true
 
 alias k='kubectl'
 
