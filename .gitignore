@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.gitconfig
+!*rc
+!.tmux.conf
+!.zshenv
+!.zprofile

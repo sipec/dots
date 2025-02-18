@@ -1,0 +1,6 @@
+path+="/opt/homebrew/bin"
+path+="/opt/homebrew/share/zsh/site-functions"
+path+="/opt/homebrew/opt/llvm/bin"
+# path+="/opt/homebrew/Cellar"
+path+="$HOME/.bun/bin"
+path+="$HOME/.elan/bin"
