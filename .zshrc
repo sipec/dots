@@ -21,7 +21,7 @@ alias k='kubectl'
 
 source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse"
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --bind 'tab:accept'"
 
 # up arrow key will search history if buffer is empty
 up-line-or-search-prefix() {

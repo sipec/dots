@@ -1,0 +1,68 @@
+[
+  {
+    "bindings": {
+      "cmd-h": "project_symbols::Toggle",
+      "cmd-k": "command_palette::Toggle",
+      "cmd-t": "workspace::NewFile"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-n": "workspace::NewWindow"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-r": "editor::Rename"
+    }
+  },
+
+  // replace all cmd-k prefixes
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-k u": null,
+      "cmd-k cmd-w": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-k cmd-d": null,
+      "cmd-k ctrl-cmd-d": null,
+      "cmd-k cmd-i": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-k s": null,
+      "cmd-k cmd-s": null,
+      "cmd-k cmd-t": null,
+      "cmd-k m": null,
+      "cmd-k cmd-left": null,
+      "cmd-k cmd-right": null,
+      "cmd-k cmd-up": null,
+      "cmd-k cmd-down": null,
+      "cmd-k shift-left": null,
+      "cmd-k shift-right": null,
+      "cmd-k shift-up": null,
+      "cmd-k shift-down": null
+    }
+  },
+  // Custom bindings
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "cmd-k enter": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-k": "command_palette::Toggle"
+    }
+  }
+]

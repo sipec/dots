@@ -1,0 +1,58 @@
+// documentation: https://zed.dev/docs/configuring-zed
+{
+  "show_edit_predictions": true,
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "assistant": {
+    "version": "2",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    }
+  },
+  "languages": {
+    "Markdown": {
+      "show_edit_predictions": false
+    },
+    "Python": {
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "show_edit_predictions": true,
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    }
+  },
+  "tab_size": 2,
+  "theme": {
+    "name": "theme",
+    "light": "Catppuccin Latte",
+    "dark": "Dracula"
+  },
+  "buffer_font_size": 13.0,
+  "buffer_font_family": "Recursive Sans Linear Static",
+  "buffer_font_features": {
+    "dlig": true,
+    "ss01": true,
+    "ss02": true,
+    "ss08": true,
+    "ss20": true,
+    "pnum": true
+  },
+  "ui_font_size": null,
+  "tabs": {
+    "git_status": true
+  },
+  "terminal": {
+    "font_family": "SF Mono",
+    "font_size": 12
+  },
+  "format_on_save": "prettier"
+}

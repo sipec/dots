@@ -1,0 +1,8 @@
+theme = dark:Laser,light:Apple System Colors Light
+# Hurtado,Sugarplum; Raycast Light,Builtin Light
+
+background-opacity = 0.8
+background-blur = true
+font-size = 12
+font-family = SF Mono
+# Osaka

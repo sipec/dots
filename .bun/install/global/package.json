@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@microsoft/inshellisense": "^0.0.1-rc.20",
+    "codebuff": "^1.0.161",
+    "node-gyp": "^11.1.0",
+    "node-gyp-build": "^4.8.4"
+  },
+  "trustedDependencies": [
+    "@homebridge/node-pty-prebuilt-multiarch",
+    "@microsoft/inshellisense",
+    "@vscode/ripgrep",
+    "tree-sitter",
+    "tree-sitter-c",
+    "tree-sitter-c-sharp",
+    "tree-sitter-cpp",
+    "tree-sitter-go",
+    "tree-sitter-java",
+    "tree-sitter-javascript",
+    "tree-sitter-php",
+    "tree-sitter-python",
+    "tree-sitter-ruby",
+    "tree-sitter-rust",
+    "tree-sitter-typescript"
+  ]
+}
