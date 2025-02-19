@@ -4,7 +4,7 @@
     "": {
       "dependencies": {
         "@microsoft/inshellisense": "^0.0.1-rc.20",
-        "codebuff": "^1.0.161",
+        "codebuff": "^1.0.163",
         "node-gyp": "^11.1.0",
         "node-gyp-build": "^4.8.4",
       },
@@ -122,7 +122,7 @@
 
     "clone": ["clone@1.0.4", "", {}, "sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg=="],
 
-    "codebuff": ["codebuff@1.0.161", "", { "dependencies": { "@types/diff": "5.2.1", "@vscode/ripgrep": "1.15.9", "axios": "1.7.4", "diff": "5.2.0", "env-cmd": "^10.1.0", "ignore": "5.3.2", "lodash": "*", "nanoid": "5.0.7", "picocolors": "1.1.0", "puppeteer-core": "^24.2.0", "systeminformation": "5.23.4", "tree-sitter": "0.21.1", "tree-sitter-c": "0.23.0", "tree-sitter-c-sharp": "0.23.0", "tree-sitter-cpp": "0.23.0", "tree-sitter-go": "0.23.1", "tree-sitter-java": "0.23.2", "tree-sitter-javascript": "0.23.0", "tree-sitter-php": "0.23.2", "tree-sitter-python": "0.23.2", "tree-sitter-ruby": "0.23.0", "tree-sitter-rust": "0.23.0", "tree-sitter-typescript": "0.23.0", "ts-pattern": "5.3.1", "ws": "8.18.0", "zod": "3.23.8" }, "optionalDependencies": { "@homebridge/node-pty-prebuilt-multiarch": "0.12.0-beta.5" }, "bin": { "codebuff": "dist/index.js" } }, "sha512-I350uSC19C4xlJg9gRPSEdDjf/SgIUpDPe53UlMMuWz5c0rl/CO3p36HbTHdJdgOdZMgmJ3C5bXA8/qWaiX7uA=="],
+    "codebuff": ["codebuff@1.0.163", "", { "dependencies": { "@types/diff": "5.2.1", "@vscode/ripgrep": "1.15.9", "axios": "1.7.4", "diff": "5.2.0", "env-cmd": "^10.1.0", "ignore": "5.3.2", "lodash": "*", "nanoid": "5.0.7", "picocolors": "1.1.0", "puppeteer-core": "^24.2.0", "systeminformation": "5.23.4", "tree-sitter": "0.21.1", "tree-sitter-c": "0.23.0", "tree-sitter-c-sharp": "0.23.0", "tree-sitter-cpp": "0.23.0", "tree-sitter-go": "0.23.1", "tree-sitter-java": "0.23.2", "tree-sitter-javascript": "0.23.0", "tree-sitter-php": "0.23.2", "tree-sitter-python": "0.23.2", "tree-sitter-ruby": "0.23.0", "tree-sitter-rust": "0.23.0", "tree-sitter-typescript": "0.23.0", "ts-pattern": "5.3.1", "ws": "8.18.0", "zod": "3.23.8" }, "optionalDependencies": { "@homebridge/node-pty-prebuilt-multiarch": "0.12.0-beta.5" }, "bin": { "codebuff": "dist/index.js" } }, "sha512-tB3lO5e9DLJD3aHutoyWWA9IsnCbS9dNxBKkMkN4zKHN5Cg68r7snemjvAIyySFzYLlCiL4RCiw9tTa2eH2V0Q=="],
 
     "color-convert": ["color-convert@2.0.1", "", { "dependencies": { "color-name": "~1.1.4" } }, "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ=="],
 
