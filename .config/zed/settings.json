@@ -46,13 +46,19 @@
     "ss20": true,
     "pnum": true
   },
-  "ui_font_size": null,
   "tabs": {
     "git_status": true
   },
   "terminal": {
     "font_family": "SF Mono",
-    "font_size": 12
+    "font_size": 12,
+    "default_height": 90,
+    "shell": {
+      "with_arguments": {
+        "program": "zsh",
+        "args": ["-f"]
+      }
+    }
   },
   "format_on_save": "prettier"
 }

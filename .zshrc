@@ -1,3 +1,6 @@
+zparseopts -D -E -- f=fast
+
+export EDITOR=micro
 export CLICOLOR=1
 
 local HOMEBREW_PREFIX=/opt/homebrew
@@ -14,6 +17,7 @@ RPROMPT=\$vcs_info_msg_0_
 PROMPT='%D{%m-%d %H:%M} %2~ > '
 zstyle ':vcs_info:git:*' formats '%F{blue}%b%f %r'
 
+alias tf="tofu"
 alias k='kubectl'
 
 # bun completions
@@ -26,7 +30,7 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --bind 'tab:accept'"
 # up arrow key will search history if buffer is empty
 up-line-or-search-prefix() {
     if [ -z $BUFFER ]; then
-        BUFFER="$(fc -ln 1 | fzf --layout=default --no-sort +m --tac --bind 'start:pos(1)')"
+        BUFFER="$(fc -ln 1 | fzf --layout=default --no-sort +m --tac --bind 'start:pos(1)' --height 12)"
         CURSOR=$#BUFFER
         zle redisplay
     else
@@ -51,4 +55,4 @@ yarn() {
 
 . "$HOME/.local/bin/env"
 
-[[ -f ~/.inshellisense/zsh/init.zsh ]] && source ~/.inshellisense/zsh/init.zsh
+[[ ! $fast ]] && [[ -f ~/.inshellisense/zsh/init.zsh ]] && source ~/.inshellisense/zsh/init.zsh

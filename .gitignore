@@ -17,6 +17,8 @@
 !.config/zed/settings.json
 !.config/zed/keymap.json
 
+!.inshellisenserc.toml
+
 !.tmux.conf
 
 !.zshenv
