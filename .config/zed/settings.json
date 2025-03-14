@@ -2,24 +2,24 @@
 {
   "show_edit_predictions": true,
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
+  "edit_predictions": {
+    "disabled_globs": ["*.md", "**/settings.json"]
+  },
+  "edit_predictions_disabled_in": ["comment"],
   "assistant": {
     "version": "2",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "model": "claude-3-7-sonnet-latest"
     }
   },
   "languages": {
     "Markdown": {
       "show_edit_predictions": false
     },
-    "Python": {
-      "format_on_save": "on"
-    },
     "TypeScript": {
-      "show_edit_predictions": true,
       "code_actions_on_format": {
         "source.organizeImports": true
       }
@@ -30,6 +30,8 @@
       }
     }
   },
+  "use_autoclose": false,
+  "soft_wrap": "editor_width",
   "tab_size": 2,
   "theme": {
     "name": "theme",
@@ -60,5 +62,10 @@
       }
     }
   },
-  "format_on_save": "prettier"
+  "gutter": {
+    "line_numbers": false
+  },
+  "project_panel": { "dock": "right" },
+  "notification_panel": { "button": false, "dock": "bottom" },
+  "collaboration_panel": { "button": false }
 }
