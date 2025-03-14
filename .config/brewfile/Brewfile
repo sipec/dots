@@ -1,0 +1,109 @@
+
+# tap repositories and their packages
+
+tap homebrew/core
+brew autoenv
+brew awscli
+brew bitwarden-cli
+brew brotli
+brew c-ares
+brew ca-certificates
+brew cffi
+brew cmake
+brew cryptography
+brew docker
+brew docker-completion
+brew docutils
+brew firebase-cli
+brew fzf
+brew gcc
+brew gdbm
+brew gettext
+brew gh
+brew gmp
+brew icu4c@76
+brew isl
+brew jemalloc
+brew krb5
+brew kubernetes-cli
+brew libev
+brew libgit2@1.8
+brew libmpc
+brew libnghttp2
+brew libpq
+brew libssh2
+brew libunistring
+brew libuv
+brew libyaml
+brew libzip
+brew llvm
+brew lz4
+brew micro
+brew mpdecimal
+brew mpfr
+brew nghttp2
+brew node
+brew node@22
+brew openjdk
+brew openssl@3
+brew opentofu
+brew p7zip
+brew pkgconf
+brew postgresql@17
+brew pre-commit
+brew pycparser
+brew python@3.11
+brew python@3.12
+brew python@3.13
+brew python@3.9
+brew readline
+brew ruff
+brew rust
+brew rustup
+brew shfmt
+brew sqlite
+brew stern
+brew terminal-notifier
+brew tldr
+brew tree
+brew uv
+brew watchexec
+brew xz
+brew yarn
+brew z3
+brew zsh-fast-syntax-highlighting
+brew zstd
+
+tap homebrew/cask
+cask bruno
+cask ghostty
+cask google-cloud-sdk
+cask notunes
+cask obsidian
+cask ollama
+cask orbstack
+cask raycast
+cask zed
+cask zen-browser
+
+tap homebrew/bundle
+
+tap aws/tap
+
+tap mongodb/brew
+
+tap oven-sh/bun
+brew bun
+
+tap rcmdnk/file
+brew brew-file
+
+# App Store applications
+appstore 1659667937 Actions For Obsidian (2024.2.3)
+appstore 1352778147 Bitwarden (2023.2.0)
+appstore 1482920575 DuckDuckGo Privacy for Safari (1.6.3)
+appstore 688211836 EasyRes (1.1.4)
+appstore 1564688210 Glance (3.0)
+appstore 1452453066 Hidden Bar (1.8)
+appstore 539883307 LINE (9.6.1)
+appstore 403195710 Remote Mouse (3.302)

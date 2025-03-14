@@ -23,6 +23,12 @@ alias k='kubectl'
 # bun completions
 # [ -s "/Users/clarity/.bun/_bun" ] && source "/Users/clarity/.bun/_bun"
 
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+else
+  echo "brew-wrap not installed"
+fi
+
 source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --bind 'tab:accept'"
@@ -55,4 +61,10 @@ yarn() {
 
 . "$HOME/.local/bin/env"
 
-[[ ! $fast ]] && [[ -f ~/.inshellisense/zsh/init.zsh ]] && source ~/.inshellisense/zsh/init.zsh
+if [[ -f ~/.inshellisense/zsh/init.zsh ]]; then
+  if [[ ! $fast ]]; then
+    source ~/.inshellisense/zsh/init.zsh
+  fi
+else
+  echo "inshellisense not installed"
+fi

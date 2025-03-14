@@ -9,6 +9,8 @@
 !.bun/install/global/*
 
 !.config
+!.config/brewfile
+!.config/brewfile/Brewfile
 !.config/ghostty
 !.config/ghostty/config
 !.config/gh/
