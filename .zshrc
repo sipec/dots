@@ -31,18 +31,17 @@ fi
 
 source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --bind 'tab:accept'"
+export FZF_DEFAULT_OPTS="--height ~40% --layout=reverse --bind 'tab:accept'"
 
-# up arrow key will search history if buffer is empty
 up-line-or-search-prefix() {
-    if [ -z $BUFFER ]; then
-        BUFFER="$(fc -ln 1 | fzf --layout=default --no-sort +m --tac --bind 'start:pos(1)' --height 12)"
-        CURSOR=$#BUFFER
-        zle redisplay
-    else
-        zle up-line-or-search
-    fi
+  if [ -z "$BUFFER" ]; then
+    local FZF_CTRL_R_OPTS="--layout=default --height ~12"
+    zle fzf-history-widget
+  else
+    zle up-line-or-search
+  fi
 }
+
 zle -N up-line-or-search-prefix
 bindkey "^[[A" up-line-or-search-prefix  # Up arrow key
 
