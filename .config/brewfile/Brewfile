@@ -4,10 +4,12 @@
 tap homebrew/core
 brew autoenv
 brew awscli
+brew bash
 brew bitwarden-cli
 brew brotli
 brew c-ares
 brew ca-certificates
+brew cairo
 brew cffi
 brew cmake
 brew cryptography
@@ -15,32 +17,56 @@ brew docker
 brew docker-completion
 brew docutils
 brew firebase-cli
+brew fontconfig
+brew freetype
+brew fribidi
 brew fzf
 brew gcc
 brew gdbm
+brew gdk-pixbuf
 brew gettext
 brew gh
+brew giflib
+brew glib
 brew gmp
+brew graphite2
+brew harfbuzz
 brew icu4c@76
+brew icu4c@77
 brew isl
 brew jemalloc
+brew jpeg-turbo
 brew krb5
 brew kubernetes-cli
 brew libev
+brew libgit2
 brew libgit2@1.8
 brew libmpc
 brew libnghttp2
+brew libpng
 brew libpq
+brew librsvg
 brew libssh2
+brew libtiff
 brew libunistring
 brew libuv
+brew libx11
+brew libxau
+brew libxcb
+brew libxdmcp
+brew libxext
+brew libxrender
 brew libyaml
 brew libzip
+brew little-cms2
 brew llvm
+brew llvm@19
 brew lz4
+brew lzo
 brew micro
 brew mpdecimal
 brew mpfr
+brew ncurses
 brew nghttp2
 brew node
 brew node@22
@@ -48,6 +74,9 @@ brew openjdk
 brew openssl@3
 brew opentofu
 brew p7zip
+brew pango
+brew pcre2
+brew pixman
 brew pkgconf
 brew postgresql@17
 brew pre-commit
@@ -56,6 +85,7 @@ brew python@3.11
 brew python@3.12
 brew python@3.13
 brew python@3.9
+brew qpdf
 brew readline
 brew ruff
 brew rust
@@ -68,6 +98,7 @@ brew tldr
 brew tree
 brew uv
 brew watchexec
+brew xorgproto
 brew xz
 brew yarn
 brew z3
@@ -105,5 +136,6 @@ appstore 1482920575 DuckDuckGo Privacy for Safari (1.6.3)
 appstore 688211836 EasyRes (1.1.4)
 appstore 1564688210 Glance (3.0)
 appstore 1452453066 Hidden Bar (1.8)
-appstore 539883307 LINE (9.6.1)
+appstore 539883307 LINE (9.7.0)
 appstore 403195710 Remote Mouse (3.302)
+appstore 1448648921 Seashore (3.40)

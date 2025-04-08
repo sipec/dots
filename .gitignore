@@ -25,6 +25,7 @@
 
 !.zshenv
 !.zprofile
+!.zshrc
 
 !vscode
 !vscode/settings.json

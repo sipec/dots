@@ -9,30 +9,67 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-n": "workspace::NewWindow"
+      "cmd-n": "workspace::NewWindow",
+      "cmd-s s": "workspace::SaveWithoutFormat",
+      "cmd-s cmd-s": "workspace::SaveWithoutFormat",
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-r": "editor::Rename"
+      "alt-r": "editor::Rename",
+      "cmd-o": "outline::Toggle",
     }
   },
-
   // replace all cmd-k prefixes
   {
     "context": "Pane",
     "bindings": {
+      "cmd-k e": null,
+      "cmd-k t": null,
       "cmd-k u": null,
-      "cmd-k cmd-w": null
+      "cmd-k cmd-w": null,
+      "cmd-k shift-enter": null,
+      "cmd-k up": null,
+      "cmd-k down": null,
+      "cmd-k left": null,
+      "cmd-k right": null
     }
   },
   {
     "context": "Editor",
     "bindings": {
+      "cmd-k cmd-q": null,
+      "cmd-k q": null,
+      "cmd-k z": null,
       "cmd-k cmd-d": null,
       "cmd-k ctrl-cmd-d": null,
-      "cmd-k cmd-i": null
+      "cmd-k cmd-i": null,
+      "cmd-k cmd-l": null,
+      "cmd-k cmd-[": null,
+      "cmd-k cmd-]": null,
+      "cmd-k cmd-1": null,
+      "cmd-k cmd-2": null,
+      "cmd-k cmd-3": null,
+      "cmd-k cmd-4": null,
+      "cmd-k cmd-5": null,
+      "cmd-k cmd-6": null,
+      "cmd-k cmd-7": null,
+      "cmd-k cmd-8": null,
+      "cmd-k cmd-9": null,
+      "cmd-k cmd-0": null,
+      "cmd-k cmd-j": null,
+      "cmd-k r": null,
+      "cmd-k p": null,
+      "cmd-k v": null
+    }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      "cmd-k c": null,
+      "cmd-k h": null,
+      "cmd-k l": null
     }
   },
   {
@@ -52,11 +89,18 @@
       "cmd-k shift-down": null
     }
   },
-  // Custom bindings
   {
     "context": "Editor && mode == full",
     "bindings": {
-      "cmd-k enter": null
+      "cmd-k enter": null,
+      "cmd-k z": null
+    }
+  },
+  // Custom bindings
+  {
+    "context": "FileFinder && !menu_open",
+    "bindings": {
+      "cmd-k": "command_palette::Toggle"
     }
   },
   {

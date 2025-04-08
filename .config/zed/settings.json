@@ -2,10 +2,10 @@
 {
   "show_edit_predictions": true,
   "features": {
-    "edit_prediction_provider": "supermaven"
+    "edit_prediction_provider": "zed"
   },
   "edit_predictions": {
-    "disabled_globs": ["*.md", "**/settings.json"]
+    "disabled_globs": ["**/*.md", "**/*.csv", "**/*.tsv","**/settings.json", "**/*.log"]
   },
   "edit_predictions_disabled_in": ["comment"],
   "assistant": {
@@ -15,20 +15,21 @@
       "model": "claude-3-7-sonnet-latest"
     }
   },
-  "languages": {
-    "Markdown": {
-      "show_edit_predictions": false
-    },
-    "TypeScript": {
-      "code_actions_on_format": {
-        "source.organizeImports": true
-      }
-    },
-    "TSX": {
-      "code_actions_on_format": {
-        "source.organizeImports": true
-      }
+  "formatter": {
+    "language_server": {
+      "name": "biome",
     }
+  },
+  "code_actions_on_format": {
+    "source.fixAll.biome": true,
+    "source.organizeImports": true
+  }, 
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      }
+    },
   },
   "use_autoclose": false,
   "soft_wrap": "editor_width",
