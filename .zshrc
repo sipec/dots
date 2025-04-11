@@ -29,7 +29,6 @@ else
   echo "brew-wrap not installed"
 fi
 
-source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height ~40% --layout=reverse --bind 'tab:accept'"
 

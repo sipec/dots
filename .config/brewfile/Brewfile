@@ -63,6 +63,7 @@ brew llvm
 brew llvm@19
 brew lz4
 brew lzo
+brew mas
 brew micro
 brew mpdecimal
 brew mpfr
@@ -129,8 +130,12 @@ brew bun
 tap rcmdnk/file
 brew brew-file
 
+tap supabase/tap
+brew supabase
+
 # App Store applications
 appstore 1659667937 Actions For Obsidian (2024.2.3)
+appstore 937984704 Amphetamine (5.3.2)
 appstore 1352778147 Bitwarden (2023.2.0)
 appstore 1482920575 DuckDuckGo Privacy for Safari (1.6.3)
 appstore 688211836 EasyRes (1.1.4)
