@@ -8,14 +8,7 @@ export FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH"
 
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# show path and git branch
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-PROMPT='%D{%m-%d %H:%M} %2~ > '
-zstyle ':vcs_info:git:*' formats '%F{blue}%b%f %r'
+eval "$(starship init zsh)"
 
 alias tf="tofu"
 alias k='kubectl'
@@ -29,7 +22,7 @@ else
   echo "brew-wrap not installed"
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 export FZF_DEFAULT_OPTS="--height ~40% --layout=reverse --bind 'tab:accept'"
 
 up-line-or-search-prefix() {
